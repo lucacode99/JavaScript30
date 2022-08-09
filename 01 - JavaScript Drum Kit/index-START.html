@@ -62,7 +62,7 @@
   // Ton abspielen
   // pro Klick einmal abspielen ("reset == 0 setzen")
   window.addEventListener('keydown', function(e){
-    const sound = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+    const sound = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     sound.currentTime = 0;
     if (!sound) {
       return
